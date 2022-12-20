@@ -60,3 +60,43 @@ Imprime:
         Cotação Dolar: 5.2039 Reais
         Valor mais baixo: 5.1769 Reais
         Valor mais alto: 5.3249 Reais
+
+### Dificultando mais um pouco
+#### E quais as cotações do dolar nos ultimos 30 dias?
+Para pegar a cotação dos ultimos 30 dias, a URL de requisição disponibilizada é:
+
+        https://economia.awesomeapi.com.br/json/daily/:moeda/:numero_dias
+        
+onde devemos informar qual a moeda e quantos dias de cotação, então nossa URL ficará assim:
+
+        https://economia.awesomeapi.com.br/json/daily/USD-BRL/30
+        
+Com a URL em mãos vamos pra requisição:
+
+        requisicao = requests.get("https://economia.awesomeapi.com.br/json/daily/USD-BRL/30")
+        ult_30_dict = requisicao.json()
+        print(ult_30_dict)
+        
+Imprime:
+
+        [{'code': 'USD', 'codein': 'BRL', 'name': 'Dólar Americano/Real Brasileiro', 'high': '5.3249', 'low': '5.1769', 'varBid': '-0.084', 'pctChange': '-1.59', 'bid': '5.2085', 'ask': '5.2095', 'timestamp': '1671562971', 'create_date': '2022-12-20 16:02:51'}, {'high': '5.2934', 'low': '5.2934', 'varBid': '0.0004', 'pctChange': '0.01', 'bid': '5.293', 'ask': '5.2939', 'timestamp': '1671494376'}, {'high': '5.3317', 'low': '5.263', 'varBid': '0.0015', 'pctChange': '0.03', 'bid': '5.314', 'ask': '5.315', 'timestamp': '1671226102'}, {'high': '5.3317', 'low': '5.263', 'varBid': '0.0015', 'pctChange': '0.03', 'bid': '5.314', 'ask': '5.315', 'timestamp': '1671226093'}]
+        
+Agora que temos o dicionário com todas as informações, vamos extrair somente a cotação (bid):
+
+        lista_cotacoes_dolar = [item["bid"] for item in ult_30_dict]
+
+        for cotacao in lista_cotacoes_dolar:
+            valor = float(cotacao)
+            print("Cotação: {:.2f}".format(valor))
+
+Imprime:
+
+        Cotação: 5.21
+        Cotação: 5.29
+        ...
+        Cotação: 5.42
+        Cotação: 5.40
+
+
+
+
