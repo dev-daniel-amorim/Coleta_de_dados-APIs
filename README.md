@@ -98,5 +98,13 @@ Imprime:
         Cotação: 5.40
 
 
+### plotando gráfico de cotações
 
+        import matplotlib.pyplot as plt
+        plt.figure(figsize=(15,5))
+        plt.plot(lista_cotacoes_dolar)
+        plt.show()
+
+Saída:
+![Captura de tela 2022-12-20 164344](https://user-images.githubusercontent.com/115194365/208753120-15503821-8e30-4f8c-97c2-cb89c2c23b67.png)
 
