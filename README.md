@@ -105,6 +105,6 @@ Imprime:
         plt.plot(lista_cotacoes_dolar)
         plt.show()
 
-Saída:
+Saída:<br>
 ![Captura de tela 2022-12-20 164344](https://user-images.githubusercontent.com/115194365/208753120-15503821-8e30-4f8c-97c2-cb89c2c23b67.png)
 
