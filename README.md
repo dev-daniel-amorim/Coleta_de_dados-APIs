@@ -98,7 +98,7 @@ Imprime:
         Cotação: 5.40
 
 
-### plotando gráfico de cotações
+#### Plotando gráfico de cotações
 
         import matplotlib.pyplot as plt
         plt.figure(figsize=(15,5))
