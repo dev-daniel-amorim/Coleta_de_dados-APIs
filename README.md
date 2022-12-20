@@ -38,5 +38,25 @@ Para entender o que significa cada coisa no dicionário, o próprio site nos for
 
 ![Captura de tela 2022-12-20 154706](https://user-images.githubusercontent.com/115194365/208743390-f5e2fdbb-8447-4fdf-9ce5-0a7d259e8334.png)
 
+# Exploração dos dados
 
+Separando do dicionário somente USD:
 
+        # extraindo somente valores do USD
+        print("Dolar: {}".format(cotacoes_dict['USD']))
+        
+Imprime:
+
+        Dolar: {'code': 'USD', 'codein': 'BRL', 'name': 'Dólar Americano/Real Brasileiro', 'high': '5.3249', 'low': '5.1769', 'varBid': '-0.0883', 'pctChange': '-1.67', 'bid': '5.2039', 'ask': '5.2055', 'timestamp': '1671561034', 'create_date': '2022-12-20 15:30:34'}
+
+Extraindo do dicionário a cotação USD, obtendo valor atual (bid), cotação mais baixa (low) e a mais alta (high) do dia.
+
+        print("Cotação Dolar: {} Reais".format(cotacoes_dict['USD']["bid"]))
+        print("Valor mais baixo: {} Reais".format(cotacoes_dict['USD']["low"]))
+        print("Valor mais alto: {} Reais".format(cotacoes_dict['USD']["high"]))
+
+Imprime:
+
+        Cotação Dolar: 5.2039 Reais
+        Valor mais baixo: 5.1769 Reais
+        Valor mais alto: 5.3249 Reais
