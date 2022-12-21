@@ -8,7 +8,7 @@ O objetivo deste tutorial é fazer integração com um API de cotação de moeda
 
 - <a href="https://docs.awesomeapi.com.br/api-de-moedas"> Abrir site API cotação de moedas</a>
 
-Neste site encontramos informações atualizadas de diversas moedas como REAL, DOLAR e ate mesmo cotação de BITCOINS.<br>
+Neste site encontramos informações atualizadas de diversas moedas como REAL, DOLAR e até mesmo cotação de BITCOINS.<br>
 Note que, o site disponibiliza diversos links de consulta JSON, como no exemplo abaixo onde podemos fazer uma requisição e obter a cotação de diversas moedas de diversos países:
 
         https://economia.awesomeapi.com.br/json/all
