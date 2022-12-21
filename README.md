@@ -1,7 +1,7 @@
 # Coleta de dados - API
 
 O que é API?<br>
-API é um conjunto de código para usar em um serviço/aplicativo, disponibilizado por aplicações de terceiros para promover integração de forma facilitada com seu código. Essas informações recbidas por APIs geralmente vem em formato JSON, que é uma espécio de dicionário que precisamos tratar para obter as informações desejadas.
+API é um conjunto de código para usar em um serviço/aplicativo, disponibilizado por aplicações de terceiros para promover integração de forma facilitada com seu código. Essas informações recebidas por APIs geralmente vem em formato JSON, que é uma espécie de dicionário que precisamos tratar para obter as informações desejadas.
 
 # Objetivo
 O objetivo deste tutorial é fazer integração com um API de cotação de moedas disponível em:<br>
@@ -108,3 +108,15 @@ Imprime:
 Saída:<br>
 ![Captura de tela 2022-12-20 164344](https://user-images.githubusercontent.com/115194365/208753120-15503821-8e30-4f8c-97c2-cb89c2c23b67.png)
 
+# Desenvolvedor
+
+| [<img src="https://user-images.githubusercontent.com/115194365/202005566-f6278b6c-4f75-416f-b01c-e79b8d04f02e.jpg" width=115><br><sub>Daniel de Souza Amorim</sub>](https://github.com/DaniellsamorimGit) |
+| :---: | 
+
+
+#### Mais sobre o autor: <br>
+Graduado em Engenharia de computação;<br>
+Pós-graduado em Petróleo e gás;<br>
+Desenvolvedor de dispositivos embarcados, C++, Python;<br>
+Tecnologias Django, Flask, Selenium, Pandas, MySQL, HTML, Css e Javascript;<br>
+Áreas de interesse: Desenvolvimento BackEnd, Data science.<br>
